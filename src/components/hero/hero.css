@@ -1,0 +1,28 @@
+.hero__container {
+  margin: 2rem 0;
+  display: flex;
+  justify-content: space-between;
+}
+
+.hero__content {
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+}
+
+.hero__content_title {
+  padding: 1rem 0;
+}
+
+.hero__content p {
+  padding: 1rem 0;
+}
+
+.hero__content_button {
+  background-color: var(--secondary-color);
+  /* border: 1px solid black; */
+  color: var(--primary-color);
+  padding: 1rem 2rem;
+  border-radius: 0.5rem;
+  font-family: "Space Grotesk", sans-serif;
+}
