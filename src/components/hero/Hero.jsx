@@ -23,9 +23,7 @@ const Hero = () => {
             </p>
           </div>
           <div>
-            <button className="hero__content_button">
-              Book a consultation
-            </button>
+            <button className="btn-secondary">Book a consultation</button>
           </div>
         </div>
         <div>
@@ -34,22 +32,22 @@ const Hero = () => {
       </div>
       <div className="sponsor__container">
         <div>
-          <img src={amazon} alt="amazon logo" />
+          <img src={amazon} alt="amazon logo" className="sponsor__logo" />
         </div>
         <div>
-          <img src={dribble} alt="dribble logo" />
+          <img src={dribble} alt="dribble logo" className="sponsor__logo" />
         </div>
         <div>
-          <img src={hubspot} alt="hubspot logo" />
+          <img src={hubspot} alt="hubspot logo" className="sponsor__logo" />
         </div>
         <div>
-          <img src={notion} alt="notion logo" />
+          <img src={notion} alt="notion logo" className="sponsor__logo" />
         </div>
         <div>
-          <img src={netflix} alt="netflix logo" />
+          <img src={netflix} alt="netflix logo" className="sponsor__logo" />
         </div>
         <div>
-          <img src={zoom} alt="zoom logo" />
+          <img src={zoom} alt="zoom logo" className="sponsor__logo" />
         </div>
       </div>
     </section>
