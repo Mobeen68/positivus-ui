@@ -1,0 +1,32 @@
+.case__container {
+  margin: 6rem 0 6rem 0;
+}
+
+.case__content {
+  margin-top: 3rem;
+  border-radius: 2.5rem;
+  color: var(--primary-color);
+  display: flex;
+  justify-content: space-between;
+  padding: 2rem;
+}
+
+.case__studies {
+  margin: 2rem;
+  padding-right: 2.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+.case__studies__border {
+  border-right: 1px solid var(--primary-color);
+}
+
+.case__link {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  color: var(--accent-color);
+}

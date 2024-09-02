@@ -5,7 +5,8 @@ import marketing from "../../assets/services/marketing.png";
 import email from "../../assets/services/email.png";
 import content from "../../assets/services/content.png";
 import analytics from "../../assets/services/analytics.png";
-import ArrowIcon from "./components/ArrowIcon";
+import ServiceCard from "./components/ServiceCard";
+import Heading from "../common/Heading";
 const Services = () => {
   const servicesData = [
     {
@@ -67,59 +68,15 @@ const Services = () => {
   return (
     <section>
       <div className="services__container">
-        <div className="services__heading">
-          <div className="services__title__container">
-            <h3 className="services__title">Services</h3>
-          </div>
-          <p>
-            At our digital marketing agency, we offer a range of services to
-            help businesses grow and succeed online. These services include:
-          </p>
-          <div style={{ width: "60%" }}></div>
-        </div>
+        <Heading
+          title="Services"
+          description="At our digital marketing agency, we offer a range of services to help
+        businesses grow and succeed online. These services include:"
+        />
 
         <div className="services__content">
           {servicesData.map((service, idx) => (
-            <div
-              className="service__card"
-              style={{ backgroundColor: service.backgroundColor }}
-              key={service.title1}
-            >
-              <div className="service__card_title_container">
-                <div>
-                  <h3
-                    className="service__card_title"
-                    style={{ backgroundColor: service.titleBackgroundColor }}
-                  >
-                    {service.title1}
-                  </h3>
-                  <h3
-                    className="service__card_title"
-                    style={{ backgroundColor: service.titleBackgroundColor }}
-                  >
-                    {service.title2}
-                  </h3>
-                </div>
-                <img
-                  src={service.icon}
-                  alt="image"
-                  className="service__card_image"
-                />
-              </div>
-              <div className="service__card_cta">
-                <div
-                  className="service__card_arrow"
-                  style={{ backgroundColor: service.arrowContainerColor }}
-                >
-                  <ArrowIcon fillColor={service.arrowColor} />
-                </div>
-                <p
-                  style={{ color: (idx + 1) % 3 === 0 ? "#f3f3f3" : "inherit" }}
-                >
-                  Learn more
-                </p>
-              </div>
-            </div>
+            <ServiceCard service={service} idx={idx} key={service.title1} />
           ))}
         </div>
       </div>

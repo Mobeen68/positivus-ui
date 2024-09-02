@@ -3,3 +3,21 @@
   margin: 0 auto;
   padding: 0 2.5rem;
 }
+
+.heading__container {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  gap: 2.5rem;
+}
+
+.heading__title__container {
+  /* flex: 4; */
+}
+
+.heading__title {
+  padding: 2px 4px;
+  background: var(--accent-color);
+  border-radius: 6px;
+  width: max-content;
+}
