@@ -20,4 +20,14 @@
   background: var(--accent-color);
   border-radius: 6px;
   width: max-content;
+  text-transform: capitalize;
+}
+
+.heading__container p {
+  text-transform: capitalize;
+  width: 45%;
+}
+
+.heading__container p {
+  text-transform: capitalize;
 }
