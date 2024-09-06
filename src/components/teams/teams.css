@@ -1,0 +1,47 @@
+.teams__container {
+  margin: 6rem 0 6rem 0;
+}
+
+.teams__content {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem 3rem;
+  margin-top: 3rem;
+}
+
+:root {
+  --main-flower: #517bd6;
+  --nose: #ffc0cb;
+  --stem: #51d691;
+  --pot: #ff7043;
+  --pot-shadow: #d66f51;
+}
+
+.flower {
+  position: relative;
+}
+
+.flower__head {
+  /* width: 120px;
+  height: 40px; */
+  /* border-radius: 20px; */
+  /* background: var(--main-flower); */
+  /* margin-top: 50px; */
+}
+
+.flower__head::after,
+.flower__head::before {
+  content: "";
+  position: absolute;
+  background: var(--accent-color);
+  box-shadow: 8px 0px 0px -1px var(--secondary-color);
+  border-radius: 33%/50%;
+  width: 120px;
+  height: 50px;
+  transform: rotate(50deg);
+}
+
+.flower__head::before {
+  transform: rotate(-50deg);
+  box-shadow: 1px 8px 0px 0px var(--secondary-color);
+}
