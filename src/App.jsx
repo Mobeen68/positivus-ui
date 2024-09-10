@@ -5,6 +5,7 @@ import Hero from "./components/hero/Hero";
 import CTA from "./components/services/components/CTA/CTA";
 import Services from "./components/services/Services";
 import Teams from "./components/teams/Teams";
+import Testimonials from "./components/testimonials/Testimonials";
 import Working from "./components/workingProcess/Working";
 
 function App() {
@@ -17,6 +18,7 @@ function App() {
       <CaseStudies />
       <Working />
       <Teams />
+      <Testimonials />
     </>
   );
 }
