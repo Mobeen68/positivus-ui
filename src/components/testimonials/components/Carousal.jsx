@@ -64,10 +64,10 @@ const Carousal = () => {
         );
       }}
     >
-      <div className="wrapper">
-        <ul>
-          <li>This is a box with some content and an arrow at the bottom.</li>
-        </ul>
+      <div className="carousal__item">
+        <div className="box arrow-bottom">
+          This is a box with some content and an arrow at the bottom.
+        </div>
       </div>
     </Carousel>
   );
