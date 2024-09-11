@@ -4,27 +4,11 @@
 import { Carousel } from "react-responsive-carousel";
 
 import "react-responsive-carousel/lib/styles/carousel.min.css";
-
-const createCarouselItemImage = (index, options = {}) => (
-  <div key={index}>
-    <img src={`/assets/${index}.jpeg`} />
-    <p className="legend">Legend {index}</p>
-  </div>
-);
+import Star from "./Star";
 
 const Carousal = () => {
-  const arrowStyles = {
-    background: "#fff",
-    position: "absolute",
-    zIndex: 2,
-    top: "calc(50% - 15px)",
-    width: 30,
-    height: 30,
-    cursor: "pointer",
-  };
-
   const indicatorStyles = {
-    background: "#fff",
+    // background: "#fff",
     width: 8,
     height: 8,
     display: "inline-block",
@@ -34,8 +18,10 @@ const Carousal = () => {
 
   return (
     <Carousel
-      autoPlay
+      // ariaLabel="Item 2"
+      selectedItem={1}
       centerMode
+      centerSlidePercentage={60}
       showThumbs={false}
       showStatus={false}
       showArrows={false}
@@ -43,10 +29,12 @@ const Carousal = () => {
         if (isSelected) {
           return (
             <li
-              style={{ ...indicatorStyles, background: "#000" }}
+              style={{ ...indicatorStyles }}
               aria-label={`Selected: ${label} ${index + 1}`}
               title={`Selected: ${label} ${index + 1}`}
-            />
+            >
+              <Star color={"#b9ff66"} />
+            </li>
           );
         }
         return (
@@ -60,13 +48,67 @@ const Carousal = () => {
             tabIndex={0}
             title={`${label} ${index + 1}`}
             aria-label={`${label} ${index + 1}`}
-          />
+          >
+            <Star color={"#f3f3f3"} />
+          </li>
         );
       }}
     >
-      <div className="carousal__item">
-        <div className="box arrow-bottom">
-          This is a box with some content and an arrow at the bottom.
+      <div aria-label="Item 1">
+        <div className="carousal__item">
+          <div className="carousal__item_box">
+            &quot;We have been working with Positivus for the past year and have
+            seen a significant increase in website traffic and leads as a result
+            of their efforts. The team is professional, responsive, and truly
+            cares about the success of our business. We highly recommend
+            Positivus to any company looking to grow their online
+            presence.&quot;
+            <div className="carousal__item_triangle-bottom"></div>
+          </div>
+          <div className="carousal__item_name_section">
+            <h4 className="carousal__item_name_section_name">John Smith</h4>
+            <p className="carousal__item_name_section_position">
+              Marketing Director at XYZ Corp
+            </p>
+          </div>
+        </div>
+      </div>
+      <div aria-label="Item 2">
+        <div className="carousal__item">
+          <div className="carousal__item_box">
+            &quot;We have been working with Positivus for the past year and have
+            seen a significant increase in website traffic and leads as a result
+            of their efforts. The team is professional, responsive, and truly
+            cares about the success of our business. We highly recommend
+            Positivus to any company looking to grow their online
+            presence.&quot;
+            <div className="carousal__item_triangle-bottom"></div>
+          </div>
+          <div className="carousal__item_name_section">
+            <h4 className="carousal__item_name_section_name">John Smith</h4>
+            <p className="carousal__item_name_section_position">
+              Marketing Director at XYZ Corp
+            </p>
+          </div>
+        </div>
+      </div>
+      <div>
+        <div className="carousal__item">
+          <div className="carousal__item_box">
+            &quot;We have been working with Positivus for the past year and have
+            seen a significant increase in website traffic and leads as a result
+            of their efforts. The team is professional, responsive, and truly
+            cares about the success of our business. We highly recommend
+            Positivus to any company looking to grow their online
+            presence.&quot;
+            <div className="carousal__item_triangle-bottom"></div>
+          </div>
+          <div className="carousal__item_name_section">
+            <h4 className="carousal__item_name_section_name">John Smith</h4>
+            <p className="carousal__item_name_section_position">
+              Marketing Director at XYZ Corp
+            </p>
+          </div>
         </div>
       </div>
     </Carousel>
