@@ -1,3 +1,4 @@
+/* eslint-disable react/prop-types */
 /* eslint-disable no-unused-vars */
 // import { action } from "@storybook/addon-actions";
 
@@ -5,8 +6,9 @@ import { Carousel } from "react-responsive-carousel";
 
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import Star from "./Star";
+import { useState } from "react";
 
-const Carousal = () => {
+const Carousal = ({ handleSlideChange, slideIndex }) => {
   const indicatorStyles = {
     // background: "#fff",
     width: 8,
@@ -19,8 +21,9 @@ const Carousal = () => {
   return (
     <Carousel
       // ariaLabel="Item 2"
-      selectedItem={1}
+      selectedItem={slideIndex}
       centerMode
+      onChange={handleSlideChange}
       centerSlidePercentage={60}
       showThumbs={false}
       showStatus={false}
@@ -92,7 +95,7 @@ const Carousal = () => {
           </div>
         </div>
       </div>
-      <div>
+      <div aria-label="Item 3">
         <div className="carousal__item">
           <div className="carousal__item_box">
             &quot;We have been working with Positivus for the past year and have
