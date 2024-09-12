@@ -33,7 +33,6 @@ const Testimonials = () => {
           <div
             style={{
               position: "absolute",
-              // top: "50%",
               left: "30%",
               bottom: "0px",
               transform: "translate(-40%, -40%)",
@@ -46,8 +45,6 @@ const Testimonials = () => {
           <div
             style={{
               position: "absolute",
-              // top: "50%",
-              // left: "10%",
               bottom: "0px",
               right: "30%",
               transform: "translate(-40%, -50%)",

@@ -1,5 +1,6 @@
 import "./App.css";
 import CaseStudies from "./components/caseStudies/CaseStudies";
+import ContactUs from "./components/contactUs/ContactUs";
 import Header from "./components/header/Header";
 import Hero from "./components/hero/Hero";
 import CTA from "./components/services/components/CTA/CTA";
@@ -19,6 +20,7 @@ function App() {
       <Working />
       <Teams />
       <Testimonials />
+      <ContactUs />
     </>
   );
 }
