@@ -11,7 +11,7 @@
   align-items: center;
   width: 100%;
   height: 600px;
-  padding: 2rem 0px 2rem 2rem;
+  padding: 4rem 0px 4rem 4rem;
 }
 
 .contact__form {
@@ -25,9 +25,10 @@
 }
 
 .contact__image__container {
-  width: 40%;
-  height: 80%;
-  /* padding: 2rem; */
+  /* width: 100%;
+  height: 100%; */
+  /* padding: 4rem 0rem 4rem 0rem; */
+  height: 100%;
 }
 
 .contact__image {
@@ -43,14 +44,13 @@
 
 .contact__radio__container input[type="radio"] {
   --s: 1.5rem; /* control the size */
-  --c: #009688; /* the active color */
 
   height: var(--s);
   aspect-ratio: 1;
   border: 1px solid #353434;
   padding: calc(var(--s) / 5);
-  background: radial-gradient(farthest-side, var(--accent-color) 94%, #0000) 50%/0 0
-    no-repeat content-box;
+  background: radial-gradient(farthest-side, var(--accent-color) 94%, #0000) 50%/0
+    0 no-repeat content-box;
   border-radius: 50%;
   outline-offset: calc(var(--s) / 10);
   -webkit-appearance: none;

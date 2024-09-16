@@ -13,11 +13,23 @@ const ContactUs = () => {
         <div className="contact__form">
           <form action="">
             <div className="contact__radio__container">
-              <input type="radio" name="contact" id="hi" value={"hi"} className="contact__radio" />
+              <input
+                type="radio"
+                name="contact"
+                id="hi"
+                value={"hi"}
+                className="contact__radio"
+              />
               <label htmlFor="hi" className="contact__label">
                 Say Hi
               </label>
-              <input type="radio" name="contact" id="get" value={"get"} className="contact__radio" />
+              <input
+                type="radio"
+                name="contact"
+                id="get"
+                value={"get"}
+                className="contact__radio"
+              />
               <label htmlFor="get" className="contact__label">
                 Get a Quote
               </label>
