@@ -15,6 +15,9 @@ const Hero = () => {
           <h1 className="hero__content_title">
             Navigating the digital landscape for success
           </h1>
+          <div className="hero__mobile__image_container">
+            <img src={illustration} alt="image" />
+          </div>
           <div>
             <p>
               Our digital marketing agency helps businesses grow and succeed
@@ -22,11 +25,11 @@ const Hero = () => {
               media marketing, and content creation.
             </p>
           </div>
-          <div>
-            <button className="btn-secondary">Book a consultation</button>
+          <div className="hero__cta">
+            <button className="btn-secondary hero__mobile__cta">Book a consultation</button>
           </div>
         </div>
-        <div>
+        <div className="hero__image">
           <img src={illustration} alt="image" />
         </div>
       </div>

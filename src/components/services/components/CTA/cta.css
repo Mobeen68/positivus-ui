@@ -29,3 +29,39 @@
   bottom: 0;
   width: 40%;
 }
+
+.mobile {
+  display: none;
+}
+
+.desktop {
+  display: block;
+}
+
+@media screen and (max-width: 768px) {
+  .cta__container {
+    height: 100%;
+  }
+
+  .cta__image {
+    display: none;
+    height: 100%;
+  }
+
+  .cta__content {
+    display: block;
+    height: 100%;
+  }
+
+  .cta__text {
+    width: 100%;
+  }
+
+  .desktop {
+    display: none;
+  }
+
+  .mobile {
+    display: block;
+  }
+}

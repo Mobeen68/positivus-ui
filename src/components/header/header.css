@@ -30,3 +30,21 @@
   font-family: "Space Grotesk", sans-serif;
   font-weight: 500;
 }
+
+.header__mobile_menu {
+  display: none;
+}
+
+@media screen and (max-width: 768px) {
+  .header__menu_container {
+    display: none;
+  }
+
+  .header__logo_container {
+    padding: 1rem;
+  }
+
+  .header__mobile_menu {
+    display: block;
+  }
+}

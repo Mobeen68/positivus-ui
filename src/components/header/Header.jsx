@@ -1,4 +1,5 @@
 import logo from "../../assets/logo.png";
+import burgerMenu from "../../assets/BurgerMenu.png";
 import "./header.css";
 const Header = () => {
   return (
@@ -17,6 +18,9 @@ const Header = () => {
             <button className="header__menu_button">Request a quote</button>
           </li>
         </ul>
+      </div>
+      <div className="header__mobile_menu">
+        <img src={burgerMenu} alt="menu" />
       </div>
     </header>
   );

@@ -30,3 +30,39 @@
 .sponsor__logo {
   filter: grayscale(100%);
 }
+
+.hero__mobile__image_container {
+  display: none;
+}
+
+@media screen and (max-width: 768px) {
+  .hero__content_title {
+    width: 100%;
+  }
+
+  .hero__image {
+    display: none;
+  }
+
+  .hero__mobile__image_container {
+    display: block;
+  }
+
+  .hero__mobile__image_container img {
+    width: 80%;
+  }
+
+  .hero__cta {
+    /* width: 100%; */
+    text-align: center;
+  }
+
+  .hero__mobile__cta {
+    width: 100%;
+  }
+
+  .sponsor__container {
+    flex-wrap: wrap;
+    gap: 1rem;
+  }
+}

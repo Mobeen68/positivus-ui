@@ -47,3 +47,14 @@
   border-radius: 100%;
   padding: 6px;
 }
+
+@media screen and (max-width: 768px) {
+  .services__content {
+    grid-template-columns: repeat(1, 1fr);
+    gap: 2rem 0rem;
+  }
+
+  .service__card_text {
+    display: none;
+  }
+}

@@ -11,7 +11,10 @@ const CTA = () => {
             services can help your business grow and succeed online.
           </p>
           <div>
-            <button className="btn-secondary">Get your free proposal</button>
+            <button className="btn-secondary desktop">
+              Get your free proposal
+            </button>
+            <button className="btn-secondary mobile">Get your proposal</button>
           </div>
         </div>
         <div></div>

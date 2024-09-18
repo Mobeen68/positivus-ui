@@ -26,3 +26,14 @@
 .heading__container p {
   width: 40%;
 }
+
+@media screen and (max-width: 768px) {
+  .heading__container {
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .heading__container p {
+    width: 100%;
+  }
+}
