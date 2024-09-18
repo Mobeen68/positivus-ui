@@ -1,6 +1,7 @@
 import "./App.css";
 import CaseStudies from "./components/caseStudies/CaseStudies";
 import ContactUs from "./components/contactUs/ContactUs";
+import Footer from "./components/footer/Footer";
 import Header from "./components/header/Header";
 import Hero from "./components/hero/Hero";
 import CTA from "./components/services/components/CTA/CTA";
@@ -21,6 +22,7 @@ function App() {
       <Teams />
       <Testimonials />
       <ContactUs />
+      <Footer />
     </>
   );
 }
