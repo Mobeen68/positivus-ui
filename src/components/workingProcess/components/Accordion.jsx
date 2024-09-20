@@ -15,7 +15,7 @@ const ProcessAccordion = ({ id, title, description }) => (
     <Accordion.Item className="AccordionItem" value="item-1">
       <AccordionTrigger>
         <div style={{ display: "flex", gap: "1rem", alignItems: "center" }}>
-          <h2>{id}</h2> <h4>{title}</h4>
+          <h2 className="AccordionId">{id}</h2> <h4 className="AccordionTitle">{title}</h4>
         </div>
       </AccordionTrigger>
       <AccordionContent>

@@ -164,3 +164,25 @@ h3 {
     height: 0;
   }
 }
+
+@media screen and (max-width: 768px) {
+  .AccordionTitle {
+    font-size: 15px;
+    /* font-weight: 700; */
+  }
+
+  .AccordionId {
+    font-size: 32px;
+    font-weight: 700;
+  }
+
+  .AccordionChevron {
+    width: 14px;
+    height: 14px;
+  }
+
+  .AccordionChevronBorder {
+    top: -9px;
+  left: -9px;
+  }
+}

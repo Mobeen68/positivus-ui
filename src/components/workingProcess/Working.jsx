@@ -17,7 +17,7 @@ const process = [
   },
   {
     id: 3,
-    title: "Impelementation",
+    title: "Implementation",
     description:
       "During the initial consultation, we will discuss your business goals and objectives, target audience, and current marketing efforts. This will allow us to understand your needs and tailor our services to best fit your requirements.",
   },
