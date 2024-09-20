@@ -25,7 +25,7 @@ const CaseStudies = () => {
           "Explore Real-Life Examples of Our Proven Digital Marketing Success through Our Case Studies"
         }
       />
-      <div className="case__content bg-secondary">
+      <div className="case__content">
         {studies.map((study, idx) => (
           <Studies
             description={study.description}

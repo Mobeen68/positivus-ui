@@ -7,6 +7,8 @@
   border-radius: 2.5rem;
   color: var(--primary-color);
   display: flex;
+  background: var(--secondary-color);
+  /* gap: 2rem; */
   justify-content: space-between;
   padding: 2rem;
 }
@@ -29,4 +31,29 @@
   align-items: center;
   gap: 0.5rem;
   color: var(--accent-color);
+}
+
+@media screen and (max-width: 768px) {
+  .case__content {
+    display: flex;
+    flex-direction: row;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    gap: 1rem;
+    padding: 1rem;
+    background: transparent;
+  }
+
+  .case__studies {
+    flex: 0 0 100%;
+    scroll-snap-align: start;
+    background: var(--secondary-color);
+    padding: 2rem;
+    border-radius: 2rem;
+    margin: 0;
+  }
+
+  .case__studies__border {
+    border-right: none;
+  }
 }
