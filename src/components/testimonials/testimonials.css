@@ -71,3 +71,16 @@
 .carousal__item_name_section_position {
   color: var(--primary-color);
 }
+
+@media screen and (max-width: 768px) {
+  .carousal__item {
+    padding: 10px;
+    overflow: hidden;
+  }
+
+  .carousal__item_box {
+    padding: 20px;
+    text-align: start;
+    overflow: hidden;
+  }
+}

@@ -22,7 +22,7 @@ const Carousal = ({ handleSlideChange, slideIndex }) => {
     <Carousel
       // ariaLabel="Item 2"
       selectedItem={slideIndex}
-      centerMode
+      // centerMode
       onChange={handleSlideChange}
       centerSlidePercentage={60}
       showThumbs={false}
@@ -60,12 +60,14 @@ const Carousal = ({ handleSlideChange, slideIndex }) => {
       <div aria-label="Item 1">
         <div className="carousal__item">
           <div className="carousal__item_box">
-            &quot;We have been working with Positivus for the past year and have
-            seen a significant increase in website traffic and leads as a result
-            of their efforts. The team is professional, responsive, and truly
-            cares about the success of our business. We highly recommend
-            Positivus to any company looking to grow their online
-            presence.&quot;
+            <p>
+              &quot;We have been working with Positivus for the past year and
+              have seen a significant increase in website traffic and leads as a
+              result of their efforts. The team is professional, responsive, and
+              truly cares about the success of our business. We highly recommend
+              Positivus to any company looking to grow their online
+              presence.&quot;
+            </p>
             <div className="carousal__item_triangle-bottom"></div>
           </div>
           <div className="carousal__item_name_section">
@@ -79,12 +81,14 @@ const Carousal = ({ handleSlideChange, slideIndex }) => {
       <div aria-label="Item 2">
         <div className="carousal__item">
           <div className="carousal__item_box">
-            &quot;We have been working with Positivus for the past year and have
-            seen a significant increase in website traffic and leads as a result
-            of their efforts. The team is professional, responsive, and truly
-            cares about the success of our business. We highly recommend
-            Positivus to any company looking to grow their online
-            presence.&quot;
+            <p>
+              &quot;We have been working with Positivus for the past year and
+              have seen a significant increase in website traffic and leads as a
+              result of their efforts. The team is professional, responsive, and
+              truly cares about the success of our business. We highly recommend
+              Positivus to any company looking to grow their online
+              presence.&quot;
+            </p>
             <div className="carousal__item_triangle-bottom"></div>
           </div>
           <div className="carousal__item_name_section">
@@ -98,12 +102,14 @@ const Carousal = ({ handleSlideChange, slideIndex }) => {
       <div aria-label="Item 3">
         <div className="carousal__item">
           <div className="carousal__item_box">
-            &quot;We have been working with Positivus for the past year and have
-            seen a significant increase in website traffic and leads as a result
-            of their efforts. The team is professional, responsive, and truly
-            cares about the success of our business. We highly recommend
-            Positivus to any company looking to grow their online
-            presence.&quot;
+            <p>
+              &quot;We have been working with Positivus for the past year and
+              have seen a significant increase in website traffic and leads as a
+              result of their efforts. The team is professional, responsive, and
+              truly cares about the success of our business. We highly recommend
+              Positivus to any company looking to grow their online
+              presence.&quot;
+            </p>
             <div className="carousal__item_triangle-bottom"></div>
           </div>
           <div className="carousal__item_name_section">

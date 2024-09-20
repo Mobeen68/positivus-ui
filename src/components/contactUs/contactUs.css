@@ -97,3 +97,22 @@
   border: 1px solid black;
   font-family: "Space Grotesk", sans-serif;
 }
+
+@media screen and (max-width: 768px) {
+  .contact__image__container {
+    display: none;
+  }
+
+  .contact__form__container {
+    width: 100%;
+  }
+
+  .contact__radio__container {
+    justify-content: center;
+  }
+
+  .contact__content {
+    padding: 2rem;
+    height: 550px;
+  }
+}
