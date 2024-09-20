@@ -37,9 +37,16 @@ const Footer = () => {
             placeholder="Email"
             className="footer__body__email__input"
           />
-          <button className="footer__body__email__button">
-            Subscribe to news
-          </button>
+          <div>
+            <button className="footer__body__email__button">
+              Subscribe to news
+            </button>
+          </div>
+        </div>
+        <div className="footer__mobile__social">
+          <img src={linkedin} alt="linkedin" />
+          <img src={twitter} alt="twitter" />
+          <img src={facebook} alt="facebook" />
         </div>
       </div>
       <div className="footer__hr"></div>
