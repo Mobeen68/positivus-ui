@@ -27,10 +27,21 @@ const ServiceCard = ({ service, idx }) => {
             </h3>
           ))}
         </div>
+        <div className="service__card_image_container">
+          <img
+            src={icon}
+            alt={`${title1} icon`}
+            className="service__card_image"
+          />
+        </div>
+      </div>
+      <div className="service__card_mobile_image_container">
         <img
           src={icon}
           alt={`${title1} icon`}
-          className="service__card_image"
+          className="service__card_mobile_image"
+          height={"140px"}
+          width={"140px"}
         />
       </div>
       <div className="service__card_cta">

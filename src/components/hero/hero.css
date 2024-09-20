@@ -53,12 +53,12 @@
   }
 
   .hero__cta {
-    /* width: 100%; */
+    width: 100%;
     text-align: center;
   }
 
   .hero__mobile__cta {
-    width: 100%;
+    width: 80%;
   }
 
   .sponsor__container {

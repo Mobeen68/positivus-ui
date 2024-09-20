@@ -40,4 +40,8 @@
   .heading__container p {
     width: 100%;
   }
+
+  #root {
+    padding: 0 2rem;
+  }
 }
